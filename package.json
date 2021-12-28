@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec npm run babel-node src/index.js ",
     "babel-node": "babel-node --presets=@babel/preset-env",
-    "dev": "nodemon --exec npx babel-node src/index.js"
+    "dev": "nodemon --exec npx babel-node src/index.js",
+    "code-writer": "node src/tools/code-writer"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
   },
   "homepage": "https://github.com/mr-components/thousand-and-one-challenges#readme",
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "inquirer": "^8.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
