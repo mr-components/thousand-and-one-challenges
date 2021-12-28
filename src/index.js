@@ -1,0 +1,1 @@
+console.log('Bienvenido a thousand-and-one-challenges')

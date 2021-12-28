@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec npm run babel-node src/index.js ",
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "dev": "nodemon --exec npx babel-node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/mr-components/thousand-and-one-challenges/issues"
   },
-  "homepage": "https://github.com/mr-components/thousand-and-one-challenges#readme"
+  "homepage": "https://github.com/mr-components/thousand-and-one-challenges#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "nodemon": "^2.0.15",
+    "playwright": "^1.17.1"
+  }
 }
