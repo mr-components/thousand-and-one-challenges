@@ -1,0 +1,1 @@
+Si tienes algún problema configurando las variables de entorno, o estas te llegan vacías, puede ser porque estás ejecutando el script desde la caperta raiz. En ese caso corre el script `npm run code-writer`
